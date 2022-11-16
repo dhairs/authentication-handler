@@ -20,13 +20,14 @@
     ]
   },
   "scripts": {
+      
     "start": "npm run prod",
     "transpile": "babel ./server --out-dir api",
     "clean": "rimraf api",
     "server": "node ./api/index",
     "dev": "NODE_ENV=development npm-run-all build server",
     "prod": "NODE_ENV=production npm-run-all build server",
-    "build": "npm-run-all clean transpile",
+    "build-old": "npm-run-all clean transpile",
     "watch:dev": "nodemon"
   },
   "dependencies": {
